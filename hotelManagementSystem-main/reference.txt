@@ -1,0 +1,102 @@
+https://startbootstrap.com/theme/sb-admin-2 2/3
+
+https://www.youtube.com/watch?v=IqrBr-KT5qk 2/3
+
+https://boxicons.com/?query=calenda 10/3
+
+https://www.youtube.com/watch?v=wEfaoAa99XY&t=112s 10/3
+
+https://getcssscan.com/css-box-shadow-examples 10/3
+
+https://stackoverflow.com/questions/46010496/difference-between-2-datetimes-in-hours-in-decimal-format 26/3 (time difference)
+
+https://stackoverflow.com/questions/18467669/convert-number-to-month-name-in-php
+
+<?php
+        session_start();
+        if (!isset($_SESSION["id"])){
+            echo "<script>window.location.href= \"Manager_login.php\";</script>";
+        }
+    ?> 
+
+大概是误会
+<?php
+                        include("conn.php");
+
+                        $search_key = "";
+
+                        if(isset($_POST['searchBtn'])){
+                            $search_key = $_POST['search_key'];
+                        }
+                    
+                        $result=mysqli_query($conn,
+                        "SELECT `salary`.`employee_id`, `employee`.`employee_name`, `employee_position`.`employee_position_id`, `employee_position`.`position_name`
+                        FROM `salary` INNER JOIN `attendance`
+                        ON `salary`.`employee_id` = `attendance`.`employee_id`
+                        INNER JOIN `employee`
+                        ON `attendance`.`employee_id` = `employee`.`employee_id`
+                        INNER JOIN `employee_position`
+                        ON `employee`.`employee_position_id` = `employee_position`.`employee_position_id`
+                        WHERE employee_id LIKE '%$search_key%' 
+                        GROUP BY `salary`.`employee_id`
+                        ORDER BY `salary`.`employee_id`");
+                    ?>
+
+但还是留着
+
+ window.history.go(-1);  
+           $diff = mysqli_query($conn,"SELECT DATEDIFF(hour, '$current_date $string', '$current_date $current_time' WHERE attendance_id = '$attendance_id'");
+          echo $diff;
+          $sql = "UPDATE attendance SET 
+          sign_out_time = '$current_time',
+          working_time = '$diff'
+          WHERE attendance_id='$attendance_id';
+          ";
+          $result = mysqli_query($conn,$sql);
+          if (!$result) {
+              die('Error: ' . mysqli_error($conn));
+          }
+          else{
+              mysqli_close($conn);
+              echo '<script>alert("Sign_Out successfully !");   
+              window.history.go(-1);     
+              </script>'; 
+
+$diff = mysqli_query($conn,"SELECT DATEDIFF(hour, '$current_date $string[sign_in_time]', '$current_date $current_time' WHERE attendance_id = '$attendance_id'");
+echo $diff;
+
+<h2>
+                    <script>
+                        var month = ["January", "February", "March", "April", "May", "June",
+                        "July", "August", "September", "October", "November", "December"
+                        ];
+
+                        var d = new Date();
+                        document.write("Salary Report for " + month[d.getMonth()]);
+
+                    </script>
+                </h2>
+
+
+<?php
+                        include("conn.php");
+
+                        $search_key = "";
+
+                        if(isset($_POST['searchBtn'])){
+                            $search_key = $_POST['search_key'];
+                        }
+                    
+                        $result=mysqli_query($conn,"SELECT * FROM employee WHERE employee_name LIKE '%$search_key%' ORDER BY employee_id");
+                    ?>
+
+<button class = "buttonleft" name="back">Back</button>
+
+if(isset($count_total)){
+                                $total = mysqli_fetch_array($count_total);
+                                echo "<th>".$total['working_hour']."</th>";
+                            }
+
+$count_total=mysqli_query($conn,
+                    "SELECT ROUND(SUM(`working_time`),2) AS working_hour
+                    FROM `attendance`");

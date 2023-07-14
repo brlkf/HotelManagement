@@ -1,0 +1,502 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing:border-box;
+    
+    }
+
+.content-text{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+    margin-left:0px;
+    padding-bottom:50px;
+}
+
+#content-text{
+    transition: all .5s;
+}
+
+.top-navi{
+    justify-content: space-between;
+    align-items: center;
+    height:50px;
+    background-color:rgb(255,103,0);
+    position:fixed;
+    margin:0;
+    padding-left:300px;
+    padding-right:50px;
+    top:0;
+    left: 0;
+    display:flex;
+    width:100%
+}
+
+.top-navi-links{
+    display:flex;
+    justify-content:space-around;
+    width: 200px;
+}
+
+.top-navi-links li{
+    list-style:none;
+    display:inline-block;
+    margin-left:50px;
+    color:white
+}
+
+.top-navi-heading{
+    color:black;
+    font-size:20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "fantasy";
+
+
+}
+.side-navi{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    padding-top: 0px;
+    background-color:	rgb(40,40,40);
+    justify-content: space-around;
+    overflow-x: hidden;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.side-navi header{
+    letter-spacing: 3px;
+    font-size:15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    line-height: 50px;
+    background-color: 	rgb(40,40,40);
+    user-select: none;
+    height:50px;
+
+}
+
+.side-navi-links{
+    display:inline-block;
+    justify-content:space-around;
+    width: 250px;
+    margin-top:0px;
+    text-align:left;
+                    
+}
+
+.side-navi-links li{
+    list-style:none;
+    line-height:80px;
+    width:250px;
+    text-align:center ;
+                  
+}
+
+.side-navi-links li a {
+    display:flex;
+    text-decoration: none;
+    background-color:rgb(40,40,40);
+    
+    
+}
+
+.side-navi-links li a:hover:not(.active){
+    background-color:rgb(64,64,64); 
+   
+}
+
+.side-navi-links li a.active{
+    background-color:rgb(255,117,24);
+}
+
+.menu-icon{
+    display:flex;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top:22px
+
+    
+}
+.menu-text{
+    display:inline-flex;
+    padding-right:30px;
+    letter-spacing: 3px;
+    font-size:12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:white
+    
+    
+}
+.openSidebarBtn{
+    cursor: pointer;
+    border: none;
+    position:absolute;
+    left:30px;
+    font-size:40px;
+    background: transparent;
+    padding: 0px 5px;
+    background:transparent;
+    font-size:20px;
+            }
+
+.closeSidebarBtn {
+    font-size: 20px;
+    cursor: pointer;
+    background:transparent;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    position:absolute;
+    right:10px;
+    top:5px;
+}
+
+.welcome-content{
+    background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.25)), url(background.jpg) no-repeat center;
+    background-color: black;
+    background-size: cover;
+    height: 500px;
+    
+   
+}
+
+
+.welcome-content-section{
+    margin-left:30px;
+    margin-top:50px;
+    padding:30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:white;
+    letter-spacing: 3px;
+    
+}
+
+.company-basic-info{
+    background-color: rgb(240,240,240);
+    padding-top:50px;
+    padding-left:150px;
+    padding-right:150px;
+    padding-bottom:50px;
+}
+
+.comIntroTable{
+   background-color:	rgb(32,32,32);
+   color:white;
+   text-align:center;
+   border-color:	rgb(32,32,32);
+   border-spacing: 3px 10px;
+  
+}
+
+.comIntroTable th{
+   height:200px;
+   width:400px;
+   background-color:	rgb(32,32,32);
+   
+}
+
+.comIntroTable td{
+   height:50px;
+   width:400px;
+   background-color:	rgb(32,32,32);
+   
+}
+.ticketDatabase{
+    align-items: center;
+    justify-content: center;
+    margin-top:0px;
+    margin-left:0px;
+    padding-bottom:50px;
+    width:100%
+}
+
+#ticketDatabase{
+    transition: all .5s;  
+}
+
+.ticketPageTop{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:50px;
+    background-color:rgb(255,168,18);
+    margin-top:0px;
+    padding-left:50px;
+    padding-right:50px;
+    
+}
+
+.ticketPageTop header{
+    letter-spacing: 3px;
+    font-size:20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+    line-height: 50px;
+}
+
+.searchTicket{
+    display:flex;
+    margin-top:0px;
+    background:rgb(240,240,240);
+    padding-bottom:20px;
+}
+
+.ticketSearchBar {
+    text-align:center;
+    width:100%;
+    
+
+}
+
+.ticketSearchBar th{
+    height:70px;
+   
+    
+}
+.resetBtn{
+    padding: 12px 30px;
+}
+.searchTicketBtn{
+    padding: 12px 30px;
+}
+
+#ticketSearchBar input[type=text],input[type=date]{
+    padding: 8px 20px;
+    margin: 2px 0;
+}
+#ticketSearchBar  select {
+    padding: 8px 0px;
+    margin: 2px 0;
+    width: fit-content;
+}
+
+
+
+.ticketData{
+    display:flex;
+    
+
+}
+
+.ticketTable {
+    font-style:none;
+    padding-top:20px;
+    padding-left: 50px;
+    padding-right:50px;
+    text-align:center;
+}
+
+.ticketTable th{
+    height:70px;
+    width:200px;
+    background-color:rgb(255,103,0);
+    
+}
+
+.ticketTable td{
+    height:50px;
+    width:200px;
+    background-color:rgb(240,240,240);
+    text-decoration:none;
+}
+
+.openButton{
+    padding: 12px 30px;
+ }
+ 
+ 
+ .form-popup {
+    display: none;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color:white;
+    border-width:30px;
+    border-color:white;
+    position:absolute;
+    top:150px;
+}
+
+.add-ticket-table td{
+    height:40px;
+}
+
+.form-section input[type = submit]{
+    padding: 5px 10px;
+    position:absolute;
+    left:50px;
+    bottom:-50px
+}
+
+.closeformbutton{
+    position:absolute;
+    bottom:-50px;
+    right:50px;
+    padding: 5px 10px;
+}
+
+.editTable{
+    margin-top:30px;
+    display:flex;
+    
+
+}
+
+.edit-table{
+    display:flex;
+    border-color:solid;
+    padding-left:50px;
+    padding-right:50px;
+    text-align:center
+}
+
+.edit-table th{
+    background-color:rgb(56,56,56);
+    height:60px;
+    width:200px;
+}
+
+.edit-table td{
+    background-color:lightgrey;
+    height:50px;
+    width:200px;
+}
+
+#editTable td input[type=text],input[type=number],select{
+    width:85px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+
+}
+#editTable td input[type=date],input[type=time],select{
+    width:fit-content;
+}
+
+.busOperatorTable {
+    padding-top:20px;
+    padding-left: 250px;
+    padding-right:200px;
+    text-align:center;
+}
+
+.busOperatorTable th{
+    height:70px;
+    width:200px;
+    background-color:rgb(255,103,0);
+    
+}
+
+.busOperatorTable td{
+    height:50px;
+    width:200px;
+    background-color:rgb(240,240,240);
+    text-decoration:none;
+}
+
+.customerTable {
+    padding-top:20px;
+    padding-left: 200px;
+    padding-right:200px;
+    text-align:center;
+}
+
+.customerTable th{
+    height:70px;
+    width:200px;
+    background-color:rgb(255,103,0);
+    
+}
+
+.customerTable td{
+    height:50px;
+    width:200px;
+    background-color:rgb(240,240,240);
+}
+
+.feedbackTable {
+    padding-top:20px;
+    padding-left: 500px;
+    padding-right:200px;
+    text-align:center;
+}
+
+.feedbackTable th{
+    height:70px;
+    width:200px;
+    background-color:rgb(255,103,0);
+    
+}
+
+.feedbackTable td{
+    height:50px;
+    width:200px;
+    background-color:rgb(240,240,240);
+}
+
+.edit-bus-table{
+    
+    border-color:solid;
+    padding-left:250px;
+    padding-right:200px;
+    text-align:center
+}
+
+.edit-bus-table th{
+    background-color:rgb(56,56,56);
+    height:60px;
+    width:200px;
+}
+
+.edit-bus-table td{
+    background-color:lightgrey;
+    height:50px;
+    width:200px;
+}
+
+.table-session{
+    display:flex
+}
+.login-box{
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color:lightgrey ;
+    border-width:3px;
+    border-radius:10px;
+    border-color:#888888;
+    position:absolute;
+    top:50px;
+    padding-bottom:50px;
+    padding-top:50px;
+    padding-right:70px;
+    padding-left:70px;
+    right:33px;
+    text-align:center;
+    display:none;
+    color:#888888;
+    }
+
+ .login-box td{
+     height:40px;
+ }
+ .login_button{
+     padding-top:5px;
+     padding-bottom:5px;
+     padding-left:15px;
+     padding-right:15px;
+     border-radius:10px
+ }
+
